@@ -1,3 +1,7 @@
+* {
+    background: #eee;
+}
+
 #homepage {
     display: flex;
     flex-direction: column;
@@ -16,12 +20,56 @@ nav {
     display: flex;
     justify-content: center;
     gap: 50px;
+    background: #44aa44;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 nav button {
     border: none;
-    padding: 10px 20px;
+    padding: 10px 25px;
     font-size: 1.2rem;
-    background: #cc00cc;
-    border-radius: 10%;
+    background: #ff99ff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+nav button:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 70%;
+}
+
+.menu li {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    font-size: 1.2rem;
+    justify-content: space-around;
+}
+
+.menu li p {
+    margin: 0;
+}
+
+.card {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 1.2rem;
 }

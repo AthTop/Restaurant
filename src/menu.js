@@ -1,6 +1,7 @@
 export default (content) => {
     console.log('test');
     const menu = document.createElement('div');
+    menu.classList.add('menu');
     const heading = document.createElement('h2');
     heading.textContent = 'MENU';
     menu.appendChild(heading);
